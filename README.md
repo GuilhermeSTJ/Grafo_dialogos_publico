@@ -1,2 +1,2 @@
- Nessa versão para rodar o código basta abrir o arquivo index.html utilizando um navegador
-
+Nessa versão da aplicação para rodar basta colocar todos arquivos dentro de uma mesma pasta
+e abrir o arquivo index.html utilizando algum navegador
