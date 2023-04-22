@@ -1,3 +1,4 @@
+<pre>
 ## Como rodar:
 Nessa versão da aplicação pecisamos primeiro colocar todos arquivos dentro de uma mesma pasta. 
 E então abrir o arquivo index.html utilizando algum navegador(firefox, chrome). 
@@ -20,3 +21,4 @@ Aqui vão alguns comando em relação a criação de scripts:
 Basta adicionar os textos em relação a inputs do lado esquerdo e outputs do direito
 
 ;            -> Passa para ou o próximo "input" ou "output"
+</pre>
