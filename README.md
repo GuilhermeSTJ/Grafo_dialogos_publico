@@ -6,7 +6,7 @@ A ideia é utilizar o NW.js para rodar a aplicação, contudo, para fins de test
 
 ## Salvamento e Parser:
 Nessa versão não se encontra o parser para JSON da plataforma, quando fui testar em outro computador que não o fosse o meu reparei que tinha
-bloqueios de acesso a arquivos locais, por isso estou modificando certas coisas. Contudo já é possivel salvar os arquivos contendoos dados
+bloqueios de acesso a arquivos locais, por isso estou modificando certas coisas. Contudo ainda é possivel salvar os arquivos contendoos dados
 sobre os nós. Para salvar basta utilizar o botão "save" e para carregar os dados é necessario ( por enquanto,até entender o problema) copiar
 os dados salvos no arquivo txt e coloca-los no prompt de texto!
 
