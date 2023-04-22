@@ -1,5 +1,6 @@
 var $ = go.GraphObject.make;
 
+
 diagram = $(go.Diagram,"diagram",{
   "grid.visible" : true, // Faz o grip ficar visivel
   //"grid.gridCellSize": new go.Size(10, 10),
@@ -59,16 +60,20 @@ saveAs(blob, "saida.txt");
 }
 
 function load() {
+  Modelo = prompt('Coloque os dados aqui:');
+  console.log(Modelo);
+  document.getElementById("mySavedModel").value = Modelo;
   diagram.model = go.Model.fromJson(document.getElementById("mySavedModel").value);
 }
 
 //Cria o template do nó responsavel pelo Script
 diagram.nodeTemplateMap.add("Script",
 $(go.Node, "Auto",nodeStyle(),{
-  fromSpot: go.Spot.Right, toSpot:go.Spot.Left
+  fromSpot: go.Spot.Right, toSpot:go.Spot.Left, resizable: true,resizeObjectName: 'MAIN' 
 },
-  $(go.Panel, "Position",  
-  
+  $(go.Panel, "Position", {
+    name:"MAIN"
+  },
   $(go.Shape,"Circle",{ // Porta que sai links
     desiredSize: new go.Size(30,30), position: new go.Point(185,85), fill: "GreenYellow",
     portId: "Dialogo_out", fromLinkable: true, cursor: "pointer",
@@ -196,4 +201,3 @@ $(go.Palette, "Palette",  //Define em qual div vai ser colocado a palette
   });
   
   myPalette.grid.visible = false;
-  window.addEventListener('DOMContentLoaded', init);
