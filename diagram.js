@@ -69,7 +69,7 @@ function load() {
 //Cria o template do nó responsavel pelo Script
 diagram.nodeTemplateMap.add("Script",
 $(go.Node, "Auto",nodeStyle(),{
-  fromSpot: go.Spot.Right, toSpot:go.Spot.Left, resizable: true,resizeObjectName: 'MAIN' 
+  fromSpot: go.Spot.Right, toSpot:go.Spot.Left, 
 },
   $(go.Panel, "Position", {
     name:"MAIN"
