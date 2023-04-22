@@ -1,6 +1,6 @@
 ## Como rodar:
-Nessa versão da aplicação pecisamos primeiro colocar todos arquivos dentro de uma mesma pasta. \n
-E então abrir o arquivo index.html utilizando algum navegador(firefox, chrome). \n
+Nessa versão da aplicação pecisamos primeiro colocar todos arquivos dentro de uma mesma pasta. 
+E então abrir o arquivo index.html utilizando algum navegador(firefox, chrome). 
 A ideia é utilizar o NW.js para rodar a aplicação, contudo, para fins de testes iniciais acredito que assim fique mais facil!
 
 ## Salvamento e Parser:
@@ -10,10 +10,10 @@ Nessa versão não se encontra o parser para JSON da plataforma, quando fui test
 #Esses comandos serão entendidos no momentos de passar os scripts para o formato JSON aceito pela plataforma
 
 ## Funcionamento do nó de script
-Aqui vão alguns comando em relação a criação de scripts: \n
-@voice:      -> Corresponde ao "Falar" \n
-@wait:       -> Corresponde ao "Espera" \n
-@listen:     -> Corresponde ao "Escutar" \n
+Aqui vão alguns comando em relação a criação de scripts: 
+@voice:      -> Corresponde ao "Falar" 
+@wait:       -> Corresponde ao "Espera" 
+@listen:     -> Corresponde ao "Escutar" 
 ;            -> Passa para o próximo bloco dentro do script
 
 ## Funcionamento do nó de Diálogo
