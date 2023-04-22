@@ -55,7 +55,7 @@ function save() {
 var blob = new Blob([texto], {
     type: "text/plain;charset=utf-8",
 });
-saveAs(blob, "saida.txt");
+saveAs(blob, "saida.json");
 
 }
 
