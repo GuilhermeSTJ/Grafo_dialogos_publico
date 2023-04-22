@@ -15,10 +15,15 @@ os dados salvos no arquivo txt e coloca-los no prompt de texto!
 
 ## Funcionamento do nó de script
 Aqui vão alguns comando em relação a criação de scripts: 
-@voice:      -> Corresponde ao "Falar" 
-@wait:       -> Corresponde ao "Espera" 
-@listen:     -> Corresponde ao "Escutar" 
+Esses comandos devem ser iniciados no começo de qualquer script.
+@voice =      -> Corresponde ao "Falar" 
+@wait;       -> Corresponde ao "Espera" 
+@listen;     -> Corresponde ao "Escutar" 
 ;            -> Passa para o próximo bloco dentro do script
+
+Exemplo:
+@voice: Olá #{nome}, eu sou Robios!;
+@listen;
 
 ## Funcionamento do nó de Diálogo
 Basta adicionar os textos em relação a inputs do lado esquerdo e outputs do direito
