@@ -1,4 +1,6 @@
 import json
+import string
+import random
 from tkinter import *
 from tkinter import filedialog
 
@@ -74,7 +76,7 @@ def jsonDialogo(inputs,outputs,linkIn,linkOut):
         'inputs' : inp,
         'outputs': [{
             'output' :out,
-            'actions' :"script" + linkOut,
+            'actions' :"script:" + linkOut,
             'emotions' :"",
             'parameters' :[]
         }],
@@ -87,7 +89,11 @@ def jsonDialogo(inputs,outputs,linkIn,linkOut):
         }]
     }
 
-    print(json.dumps(data_Dialog,indent=1).replace('\\', ''))
+    letters = string.ascii_lowercase
+    digitos = string.digits
+    nome = ( ''.join(random.choice(letters + digitos) for i in range(10)) )
+    with open("/home/teo/codigo_Antigo/Grafo_gojs/nwjs-v0.74.0-linux-x64/www/JSON/dialogs/"+ nome + '.json', 'w', encoding='utf-8') as f:
+        json.dump( data_Dialog, f, ensure_ascii=False, indent=4)
     
 #Função para criação do json de script
 def jsonScript(nome, conteudo):
@@ -102,7 +108,8 @@ def jsonScript(nome, conteudo):
         'content': conteudo
     }
     
-    #print(json.dumps(data_Script))
+    with open("/home/teo/codigo_Antigo/Grafo_gojs/nwjs-v0.74.0-linux-x64/www/JSON/scripts/"+ str(nome) + '.json', 'w', encoding='utf-8') as f:
+        json.dump(data_Script  , f, ensure_ascii=False, indent=4)
 
 #Função responsavel por alocar os valores do script no construtor
 def procScript(list,links,lista_nomes):
