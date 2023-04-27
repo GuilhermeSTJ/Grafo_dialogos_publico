@@ -1,0 +1,17 @@
+{
+    "name": "nw",
+    "main": "www/index.html",
+    "nodejs": true,
+    "node_remote":[
+        "http://localhost:8080"
+    ],
+
+    "window":{
+        "position":"center",
+        "width":1280,
+        "height": 720,
+        "resizable":true,
+        "fullscreen": false
+    }
+
+}
