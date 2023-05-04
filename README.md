@@ -11,22 +11,32 @@ O parser atualmente é feito por um sript em python, contudo precisa de mais tes
 os caminhos para as pastas que deseja salvar tanto o script quanto o dialogo
 
 ##Comandos dos nós
-#Esses comandos serão entendidos no momentos de passar os scripts para o formato JSON aceito pela plataforma
+Esses comandos serão entendidos no momentos de passar os scripts para o formato JSON aceito pela plataforma.
+
+Isso pode e vai ser modificado com o tempo. A legenda contendo as instruções está sendo feita!
 
 ## Funcionamento do nó de script
 Aqui vão alguns comando em relação a criação de scripts: 
+
 Esses comandos devem ser iniciados no começo de qualquer script.
+
 @voice =      -> Corresponde ao "Falar" 
+
 @wait;       -> Corresponde ao "Espera" 
+
 @listen;     -> Corresponde ao "Escutar" 
+
 ;            -> Passa para o próximo bloco dentro do script
 
 Exemplo:
+
 @voice: Olá #{nome}, eu sou Robios!;
+
 @listen;
 
 ## Funcionamento do nó de Diálogo
 Basta adicionar os textos em relação a inputs do lado esquerdo e outputs do direito
 
 ;            -> Passa para ou o próximo "input" ou "output"
+OBS: isso será mudado para "enter" / "\n" 
 
