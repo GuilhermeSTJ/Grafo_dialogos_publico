@@ -27,6 +27,7 @@ Esses comandos devem ser iniciados no começo de qualquer script.
 @listen;     -> Corresponde ao "Escutar" 
 
 ;            -> Passa para o próximo bloco dentro do script
+OBS: ; será mudado para "enter" / "\n"
 
 Exemplo:
 
@@ -38,5 +39,5 @@ Exemplo:
 Basta adicionar os textos em relação a inputs do lado esquerdo e outputs do direito
 
 ;            -> Passa para ou o próximo "input" ou "output"
-OBS: isso será mudado para "enter" / "\n" 
+OBS: ; será mudado para "enter" / "\n" 
 
