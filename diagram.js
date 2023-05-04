@@ -45,9 +45,13 @@ function nodeStyle() {
   ];
 }
 
+function load() {
+  Modelo = prompt('Coloque os dados aqui:');
+  diagram.model = go.Model.fromJson(Modelo);
+}
+
 
 function save() {
-  document.getElementById("mySavedModel").value = diagram.model.toJson();
   texto = diagram.model.toJson();
   diagram.isModified = false;
   console.log(texto);
@@ -56,14 +60,6 @@ var blob = new Blob([texto], {
     type: "text/plain;charset=utf-8",
 });
 saveAs(blob, "saida.json");
-
-}
-
-function load() {
-  Modelo = prompt('Coloque os dados aqui:');
-  console.log(Modelo);
-  document.getElementById("mySavedModel").value = Modelo;
-  diagram.model = go.Model.fromJson(document.getElementById("mySavedModel").value);
 }
 
 //Cria o template do nó responsavel pelo Script
@@ -190,13 +186,14 @@ myPalette =
 $(go.Palette, "Palette",  //Define em qual div vai ser colocado a palette
   {
     initialScale: 0.4,
-    nodeTemplateMap: diagram.nodeTemplateMap,  
+    nodeTemplateMap: diagram.nodeTemplateMap,
     model: new go.GraphLinksModel([  
       { 
         category: "Script",
       },
       { 
-        category: "Dialogo" },
+        category: "Dialogo",
+       },
     ]),
   });
   
