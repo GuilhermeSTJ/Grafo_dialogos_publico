@@ -1,7 +1,9 @@
 
 ## Como rodar:
 Nessa versão da aplicação pecisamos primeiro colocar todos arquivos dentro de uma mesma pasta. 
+
 E então abrir o arquivo index.html utilizando algum navegador(firefox, chrome). 
+
 A ideia é utilizar o NW.js para rodar a aplicação, contudo, para fins de testes iniciais acredito que assim fique mais facil!
 
 ## Salvamento e Parser:
