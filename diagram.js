@@ -161,6 +161,42 @@ diagram.nodeTemplateMap.add("Dialogo",
 )));
 
 
+diagram.nodeTemplateMap.add("Inicia",
+$(go.Node, "Auto",nodeStyle(),{
+  fromSpot: go.Spot.Right, toSpot:go.Spot.Left, 
+},
+  $(go.Panel, "Position", {
+    name:"MAIN"
+  },
+    $(go.Shape,"Rectangle",{ 
+      desiredSize: new go.Size(60,20), position: new go.Point(90,50), fill: "GreenYellow",
+      portId: "Dialogo_out", fromLinkable: true, cursor: "pointer",
+      stroke: null}), 
+    $(go.Shape,"Circle",{ 
+      desiredSize: new go.Size(120,120), position: new go.Point(0,0), fill: "Blue", stroke: null}), 
+    $(go.TextBlock, "INICIO", {
+      editable:true, position: new go.Point(25,45), stroke: "white", font: "20pt FontAwesome" }),
+  )
+));
+
+diagram.nodeTemplateMap.add("Fim",
+$(go.Node, "Auto",nodeStyle(),{
+  fromSpot: go.Spot.Right, toSpot:go.Spot.Left, 
+},
+  $(go.Panel, "Position", {
+    name:"MAIN"
+  },
+    $(go.Shape,"Rectangle",{ 
+      desiredSize: new go.Size(60,20), position: new go.Point(-30,50), fill: "DarkRed",
+      portId: "Script_in", toLinkable: true,stroke: null,
+      stroke: null}), 
+    $(go.Shape,"Circle",{ 
+      desiredSize: new go.Size(120,120), position: new go.Point(0,0), fill: "Red", stroke: null}),
+    $(go.TextBlock, "  FIM", {
+      editable:true, position: new go.Point(40,45), stroke: "white", font: "20pt FontAwesome" }),
+),
+));
+
 diagram.linkTemplate =
   $(go.Link,
     { corner:10, routing: go.Link.AvoidsNodes, curve:go.Link.JumpOver, fromEndSegmentLength: 30,toEndSegmentLength: 30 }, 
@@ -188,6 +224,12 @@ $(go.Palette, "Palette",  //Define em qual div vai ser colocado a palette
     initialScale: 0.4,
     nodeTemplateMap: diagram.nodeTemplateMap,
     model: new go.GraphLinksModel([  
+      {
+        category: "Inicia"
+      },
+      {
+        category: "Fim"
+      },
       { 
         category: "Script",
       },

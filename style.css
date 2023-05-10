@@ -9,7 +9,7 @@ header{
 
 body{
     width: 1920px;
-    height: 1000px;
+    height: 950px;
 }
 
 .button{
@@ -38,20 +38,21 @@ body{
     font-size: 18px;
 }
 #Palette{
-    width: 300px;
+    width: 450px;
     height: 90px ;
     background-color: white;
     position: relative;
     top: 00px;
-    left:540px;
+    left:800px;
     float: left;
     z-index: 2;
     border: 3px solid black;
 }
 
 #diagram{
+    top:50px;
     width: 1914px;
-    height: 1000px;
+    height: 900px;
     border: 3px solid black;
     position: absolute;
     z-index: 1
@@ -69,6 +70,7 @@ body{
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 3;
+    left: 500px;
   }
   
   /* Links inside the dropdown */
