@@ -7,7 +7,7 @@ E então abrir o arquivo index.html utilizando algum navegador(firefox, chrome).
 A ideia é utilizar o NW.js para rodar a aplicação, contudo, para fins de testes iniciais acredito que assim fique mais facil!
 
 ## Salvamento e Parser:
-O parser atualmente é feito por um sript em python, contudo precisa de mais testes. Para utilizar o parser é necessario especificar 
+O parser atualmente é feito por um sript em python. Para utilizar o parser é necessario especificar 
 os caminhos para as pastas que deseja salvar tanto o script quanto o dialogo
 
 ##Comandos dos nós
