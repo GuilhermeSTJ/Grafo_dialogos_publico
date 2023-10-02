@@ -13,7 +13,7 @@ O parser atualmente é feito por um script em python e precisa ser rodado a part
 
 Atualmente é preciso copiar e colar para dar load no JSON do Go.js
 
-##Comandos dos nós
+## Comandos dos nós
 
 Esses comandos serão entendidos no momentos de passar os scripts para o formato JSON aceito pela plataforma.
 Ou seja, são entendidos pelo parser!
