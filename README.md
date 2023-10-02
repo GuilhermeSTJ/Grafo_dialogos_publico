@@ -14,33 +14,34 @@ O parser atualmente é feito por um script em python e precisa ser rodado a part
 Atualmente é preciso copiar e colar para dar load no JSON do Go.js
 
 ##Comandos dos nós
+
 Esses comandos serão entendidos no momentos de passar os scripts para o formato JSON aceito pela plataforma.
 Ou seja, são entendidos pelo parser!
 
-## Funcionamento do nó de script
-Aqui vão alguns comando em relação a criação de scripts: 
-
-Esses comandos devem ser iniciados no começo de qualquer script.
-
-Gerar um link de um script para outro automaticamente chama uma função de "incluir script".
-
-@speak =      -> Corresponde ao "Falar". Gera uma fala do robô 
-
-@wait;       -> Corresponde ao "Espera" 
-
-@listen;     -> Corresponde ao "Escutar" 
-
-;            -> Passa para o próximo bloco dentro do script
-
-Exemplo:
-
-@voice: Olá #{nome}, eu sou Robios!;
-
-@listen;
-
-## Funcionamento do nó de Diálogo
-Basta adicionar os textos em relação a inputs do lado esquerdo e outputs do direito.
-Atualmente o parser entende somente uma entrada de output e action.
-
-;            -> Passa para ou o próximo "input"
-
+  ## Funcionamento do nó de script
+  Aqui vão alguns comando em relação a criação de scripts: 
+  
+  Esses comandos devem ser iniciados no começo de qualquer script.
+  
+  Gerar um link de um script para outro automaticamente chama uma função de "incluir script".
+  
+  @speak =      -> Corresponde ao "Falar". Gera uma fala do robô 
+  
+  @wait;       -> Corresponde ao "Espera" 
+  
+  @listen;     -> Corresponde ao "Escutar" 
+  
+  ;            -> Passa para o próximo bloco dentro do script
+  
+  Exemplo:
+  
+  @voice: Olá #{nome}, eu sou Robios!;
+  
+  @listen;
+  
+  ## Funcionamento do nó de Diálogo
+  Basta adicionar os textos em relação a inputs do lado esquerdo e outputs do direito.
+  Atualmente o parser entende somente uma entrada de output e action.
+  
+  ;            -> Passa para ou o próximo "input"
+  
