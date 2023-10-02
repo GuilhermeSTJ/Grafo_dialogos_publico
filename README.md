@@ -5,8 +5,8 @@ Nessa versão da aplicação pecisamos primeiro colocar todos arquivos dentro de
 E então abrir o arquivo index.html utilizando algum navegador(firefox, chrome). 
 
 ## Salvamento e Parser:
-O grafo pode ser salvo em um formato gerado pelo Go.js, e não aceito pela HumanRobotics. Por isso 
-foi feito um "parser" que converte os dados JSON.
+O grafo pode ser salvo em um formato gerado pelo Go.js que não é aceito pela HumanRobotics. Por isso 
+foi feito um "parser" que converte os dados JSON no formato da plataforma da HumanRobotics.
 O parser atualmente é feito por um script em python e precisa ser rodado a parte.
 Atualmente é preciso copiar e colar para dar load no JSON do Go.js
 
