@@ -20,19 +20,19 @@ Esses comandos devem ser iniciados no começo de qualquer script.
 
 Gerar um link de um script para outro automaticamente chama uma função de "incluir script".
 
-@speak =      -> Corresponde ao "Falar". Gera uma fala do robô 
+speak: =      -> Corresponde ao "Falar", gera uma fala do robô.
 
-@wait;       -> Corresponde ao "Espera" 
+wait:;       -> Corresponde ao "Espera". 
 
-@listen;     -> Corresponde ao "Escutar" 
+listen:;     -> Corresponde ao "Escutar". 
 
-;            -> Passa para o próximo bloco dentro do script
+;            -> Passa para o próximo bloco dentro do script.
 
 Exemplo:
 
-@voice: Olá #{nome}, eu sou Robios!;
+voice: Olá #{nome}, eu sou Robios!;
 
-@listen;
+listen;
 
 ## Funcionamento do nó de Diálogo
 Basta adicionar os textos em relação a inputs do lado esquerdo e outputs do direito.
